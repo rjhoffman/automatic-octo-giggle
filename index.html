@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Roadmap Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Engineering Roadmap Planner</h1>
+    
+    <!-- Form for Team Size -->
+    <form id="teamForm">
+        <label for="teamSize">Enter the number of engineers on the team:</label>
+        <input type="number" id="teamSize" name="teamSize" min="1" required>
+        <input type="submit" value="Submit">
+    </form>
+
+<!-- Form for Backlog Items -->
+<form id="backlogForm" style="display:none;">
+    <h2>Backlog Items</h2>
+    <div id="backlogItems">
+        <!-- Backlog items will be dynamically added here -->
+    </div>
+    <button type="button" onclick="addBacklogItem()">Add Backlog Item</button>
+    <input type="submit" value="Submit">
+</form>
+
+    <!-- Form for Roadmap Start Date -->
+    <form id="startDateForm" style="display:none;">
+        <label for="startDate">Select the Roadmap Start Date:</label>
+        <input type="date" id="startDate" name="startDate" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="roadmapDisplay">
+        <!-- Roadmap will be displayed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
